@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Models</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .model {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            transition: background-color 5s;
+        }
+        .model:hover {
+            background-color: #f0f0f0;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+        .model img {
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .model img:active + .details {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Honda Models</h1>
+
+    <div class="model">
+        <img src="1.webp" alt="Honda Civic">
+        <div class="details">
+            <p><strong>Model:</strong> Honda Civic</p>
+            <p><strong>Engine:</strong> 2.0L 4-cylinder</p>
+            <p><strong>Horsepower:</strong> ~158 hp</p>
+            <p><strong>Top Speed:</strong> ~200 km/h</p>
+            <p><strong>Type:</strong> Compact Sedan</p>
+        </div>
+    </div>
+
+    <div class="model">
+        <img src="honda-accord.jpg" alt="Honda Accord">
+        <div class="details">
+            <p><strong>Model:</strong> Honda Accord</p>
+            <p><strong>Engine:</strong> 1.5L Turbo / 2.0L Hybrid</p>
+            <p><strong>Horsepower:</strong> ~192 hp</p>
+            <p><strong>Top Speed:</strong> ~210 km/h</p>
+            <p><strong>Type:</strong> Midsize Sedan</p>
+        </div>
+    </div>
+
+    <div class="model">
+        <img src="honda-crv.jpg" alt="Honda CR-V">
+        <div class="details">
+            <p><strong>Model:</strong> Honda CR-V</p>
+            <p><strong>Engine:</strong> 2.0L i-VTEC</p>
+            <p><strong>Horsepower:</strong> ~155 hp</p>
+            <p><strong>Top Speed:</strong> ~177 km/h</p>
+            <p><strong>Type:</strong> SUV</p>
+        </div>
+    </div>
+    
+</div>
+
+</body>
+</html>
